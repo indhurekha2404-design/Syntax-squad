@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard - MathVerse</title>
+
+<link rel="stylesheet" href="admin.css">
+<link rel="stylesheet" href="navigate.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+👨‍💼 MathVerse Admin
+
+</div>
+
+<nav>
+
+<a href="admin.html">Dashboard</a>
+
+<a href="#users">Users</a>
+
+<a href="#courses">Courses</a>
+
+<a href="#reports">Reports</a>
+
+<a href="math.html">Logout</a>
+
+</nav>
+
+</header>
+
+<section class="practice-page">
+
+<h1>👨‍💼 Admin Dashboard</h1>
+
+<p>Manage the complete Mathematics Learning Platform.</p>
+
+<div class="settings-card" id="users">
+
+<h2>👨‍🎓 User Management</h2>
+
+<button onclick="viewUsers()">View Users</button>
+
+<button onclick="deleteUsers()">Delete Demo User</button>
+
+</div>
+
+<br>
+
+<div class="settings-card" id="courses">
+
+<h2>📚 Course Management</h2>
+
+<label>Course Name</label>
+
+<input type="text" id="courseName">
+
+<button onclick="addCourse()">
+
+Add Course
+
+</button>
+
+</div>
+
+<br>
+
+<div class="settings-card" id="reports">
+
+<h2>📊 Platform Statistics</h2>
+
+<table class="score-table">
+
+<tr>
+
+<th>Total Students</th>
+
+<th>Total Teachers</th>
+
+<th>Total Courses</th>
+
+<th>Total Lessons</th>
+
+</tr>
+
+<tr>
+
+<td>250</td>
+
+<td>15</td>
+
+<td>10</td>
+
+<td>120</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

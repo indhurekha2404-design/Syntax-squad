@@ -1,0 +1,648 @@
+/* =====================================
+   TEACHER DASHBOARD CSS
+   MathNova
+===================================== */
+
+
+/* Main Dashboard */
+
+.teacher-dashboard{
+
+    width:90%;
+
+    max-width:1250px;
+
+    margin:auto;
+
+    padding:40px 0;
+
+    animation:teacherFade 0.8s ease;
+
+}
+
+
+@keyframes teacherFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+
+
+/* Teacher Banner */
+
+
+.teacher-banner{
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #2563eb,
+    #7c3aed
+    );
+
+    color:white;
+
+    padding:45px;
+
+    border-radius:30px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:
+
+    0 15px 35px rgba(37,99,235,.3);
+
+}
+
+
+
+.teacher-banner h1{
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+}
+
+
+.teacher-banner p{
+
+    font-size:18px;
+
+}
+
+
+
+.teacher-avatar{
+
+    font-size:90px;
+
+    background:white;
+
+    color:#2563eb;
+
+    width:150px;
+
+    height:150px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+
+
+
+/* Statistics */
+
+
+.teacher-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    margin:40px 0;
+
+}
+
+
+
+.teacher-card{
+
+    background:white;
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:25px;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+    border-bottom:6px solid #2563eb;
+
+}
+
+
+
+.teacher-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.teacher-card h2{
+
+    font-size:40px;
+
+}
+
+
+
+.teacher-card h1{
+
+    color:#2563eb;
+
+    font-size:45px;
+
+}
+
+
+
+
+
+.teacher-card:nth-child(2){
+
+    border-color:#22c55e;
+
+}
+
+
+.teacher-card:nth-child(3){
+
+    border-color:#f59e0b;
+
+}
+
+
+.teacher-card:nth-child(4){
+
+    border-color:#8b5cf6;
+
+}
+
+
+
+
+
+/* Sections */
+
+
+.teacher-section{
+
+    margin-top:45px;
+
+}
+
+
+
+.teacher-section h2{
+
+    color:#1e40af;
+
+    font-size:30px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+
+
+/* Grid */
+
+
+.teacher-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+}
+
+
+
+
+
+/* Form Boxes */
+
+
+.teacher-box{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+}
+
+
+
+.teacher-box:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+.teacher-box h3{
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+/* Inputs */
+
+
+.teacher-box input,
+.teacher-box textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    margin:12px 0;
+
+    border-radius:12px;
+
+    border:2px solid #dbeafe;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+
+
+
+.teacher-box textarea{
+
+    height:130px;
+
+    resize:none;
+
+}
+
+
+
+.teacher-box input:focus,
+.teacher-box textarea:focus{
+
+    border-color:#2563eb;
+
+}
+
+
+
+
+
+/* Buttons */
+
+
+.teacher-box button{
+
+    margin-top:15px;
+
+    padding:14px 35px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #2563eb,
+    #7c3aed
+    );
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.teacher-box button:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:
+
+    0 10px 25px rgba(37,99,235,.35);
+
+}
+
+
+
+
+
+/* Student Table */
+
+
+.teacher-table{
+
+    width:100%;
+
+    background:white;
+
+    border-collapse:collapse;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.12);
+
+}
+
+
+
+.teacher-table th{
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #2563eb,
+    #7c3aed
+    );
+
+    color:white;
+
+    padding:18px;
+
+}
+
+
+
+.teacher-table td{
+
+    padding:16px;
+
+    text-align:center;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+
+
+.teacher-table tr:hover{
+
+    background:#eff6ff;
+
+}
+
+
+
+
+
+/* Analytics */
+
+
+.analytics-card{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+
+.analytics-card div{
+
+    background:white;
+
+    padding:35px;
+
+    text-align:center;
+
+    border-radius:25px;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.1);
+
+}
+
+
+
+.analytics-card h1{
+
+    color:#2563eb;
+
+    font-size:45px;
+
+}
+
+
+
+
+
+/* Achievements */
+
+
+.achievement-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+
+
+.achievement-grid div{
+
+    background:white;
+
+    padding:35px;
+
+    text-align:center;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    border-radius:25px;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+}
+
+
+
+.achievement-grid div:hover{
+
+    transform:translateY(-10px);
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+
+
+
+
+/* Responsive */
+
+
+@media(max-width:1000px){
+
+
+.teacher-stats{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+
+.teacher-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+.achievement-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+
+.analytics-card{
+
+grid-template-columns:1fr;
+
+}
+
+
+}
+
+
+
+
+@media(max-width:700px){
+
+
+.teacher-dashboard{
+
+width:92%;
+
+}
+
+
+
+.teacher-banner{
+
+flex-direction:column;
+
+text-align:center;
+
+gap:25px;
+
+}
+
+
+
+.teacher-banner h1{
+
+font-size:32px;
+
+}
+
+
+
+.teacher-stats{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.achievement-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.teacher-table{
+
+display:block;
+
+overflow-x:auto;
+
+}
+
+
+}

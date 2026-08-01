@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Graph Lab | MathNova</title>
+
+
+<link rel="stylesheet" href="math.css">
+
+<link rel="stylesheet" href="graph.css">
+
+<link rel="stylesheet" href="navigate.css">
+
+
+
+<script src="https://www.desmos.com/api/v1.11/calculator.js"></script>
+
+</head>
+
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+📈 MathNova Graph Lab
+</div>
+
+
+<nav>
+
+<a href="student.html">Dashboard</a>
+
+<a href="courses.html">Courses</a>
+
+<a href="practice.html">Practice</a>
+
+<a href="graph.html">Graph Lab</a>
+
+<a href="settings.html">Settings</a>
+
+<a href="math.html">Logout</a>
+
+</nav>
+
+
+</header>
+
+
+
+
+
+<section class="graph-container">
+
+
+<h1>
+🚀 Interactive Graph Laboratory
+</h1>
+
+
+<p>
+Explore equations, functions and mathematical patterns visually.
+</p>
+
+
+
+
+
+<div class="graph-layout">
+
+
+
+
+
+<!-- FUNCTION LIBRARY -->
+
+<div class="graph-menu">
+
+
+<h2>📚 Function Library</h2>
+
+
+
+<button onclick="loadGraph('y=x')">
+Linear
+</button>
+
+
+
+<button onclick="loadGraph('y=x^2')">
+Quadratic
+</button>
+
+
+
+<button onclick="loadGraph('y=x^3')">
+Cubic
+</button>
+
+
+
+<button onclick="loadGraph('y=sin(x)')">
+Sine
+</button>
+
+
+
+<button onclick="loadGraph('y=cos(x)')">
+Cosine
+</button>
+
+
+
+<button onclick="loadGraph('y=tan(x)')">
+Tangent
+</button>
+
+
+
+<button onclick="loadGraph('y=e^x')">
+Exponential
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- GRAPH -->
+
+<div class="graph-box">
+
+
+<div id="calculator"></div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- CONTROL PANEL -->
+
+
+<div class="control-panel">
+
+
+<h2>🧮 Equation</h2>
+
+
+
+<input 
+id="equation"
+type="text"
+placeholder="Example: y=x^2">
+
+
+
+
+
+<button onclick="plotEquation()">
+
+Plot Graph
+
+</button>
+
+
+
+
+
+<button onclick="clearGraph()">
+
+Clear
+
+</button>
+
+
+
+
+
+<hr>
+
+
+
+
+<h3>
+🎯 Tools
+</h3>
+
+
+
+<button onclick="resetGraph()">
+
+Reset View
+
+</button>
+
+
+
+
+
+<button onclick="randomGraph()">
+
+Random Graph
+
+</button>
+
+
+
+
+
+
+<h3>
+💡 Tips
+</h3>
+
+
+
+<p>
+Try: y=x²+3x+2
+</p>
+
+
+
+<p>
+Try: y=sin(x)
+</p>
+
+
+
+<p>
+Try: y=e^x
+</p>
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<script src="graph.js"></script>
+
+
+</body>
+
+</html>

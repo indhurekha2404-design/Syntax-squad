@@ -1,0 +1,569 @@
+/* ======================================
+   MATHNOVA HOME PAGE CSS
+====================================== */
+
+
+/* Global Reset */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+
+}
+
+
+body{
+
+    background:#f8fafc;
+    color:#1f2937;
+
+}
+
+
+
+/* =========================
+      HEADER
+========================= */
+
+
+header{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:white;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,0.08);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:100;
+
+}
+
+
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    color:#2563eb;
+
+}
+
+
+
+nav{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+
+
+nav a{
+
+    text-decoration:none;
+
+    color:#374151;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+
+nav a:hover{
+
+    color:#2563eb;
+
+}
+
+
+
+/* =========================
+        HERO
+========================= */
+
+
+.hero{
+
+    min-height:500px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #2563eb,
+    #7c3aed,
+    #06b6d4
+    );
+
+    color:white;
+
+}
+
+
+
+.hero h1{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+    animation:slideDown 1s;
+
+}
+
+
+
+.hero p{
+
+    max-width:700px;
+
+    font-size:20px;
+
+    line-height:1.7;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.hero button{
+
+    padding:15px 40px;
+
+    border:none;
+
+    border-radius:40px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    color:#2563eb;
+
+    background:white;
+
+    transition:.3s;
+
+}
+
+
+
+.hero button:hover{
+
+    transform:scale(1.1);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.2);
+
+}
+
+
+
+@keyframes slideDown{
+
+from{
+
+opacity:0;
+
+transform:translateY(-40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+/* =========================
+       SECTION TITLES
+========================= */
+
+
+section h2{
+
+    text-align:center;
+
+    font-size:35px;
+
+    color:#1e40af;
+
+    margin-top:60px;
+
+}
+
+
+
+/* =========================
+       STATISTICS
+========================= */
+
+
+.stats{
+
+    width:90%;
+
+    margin:60px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+
+
+.box{
+
+    background:white;
+
+    padding:35px 20px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+}
+
+
+
+.box:hover{
+
+    transform:translateY(-12px);
+
+}
+
+
+
+.box h2{
+
+    margin:0;
+
+    font-size:45px;
+
+    color:#2563eb;
+
+}
+
+
+
+.box p{
+
+    font-size:18px;
+
+}
+
+
+
+/* =========================
+        COURSES
+========================= */
+
+
+.course-container{
+
+    width:90%;
+
+    margin:50px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.course{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.1);
+
+    transition:.4s;
+
+    border-top:5px solid #2563eb;
+
+}
+
+
+
+.course:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:
+    0 15px 30px rgba(37,99,235,.25);
+
+}
+
+
+
+.course h3{
+
+    color:#2563eb;
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+/* =========================
+       FEATURES
+========================= */
+
+
+.feature-container{
+
+    width:90%;
+
+    margin:50px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.feature{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.1);
+
+    transition:.4s;
+
+}
+
+
+
+.feature:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+    transform:translateY(-10px);
+
+}
+
+
+
+/* =========================
+        FOOTER SPACE
+========================= */
+
+
+.features{
+
+    padding-bottom:80px;
+
+}
+
+
+
+/* =========================
+        RESPONSIVE
+========================= */
+
+
+@media(max-width:1000px){
+
+
+.stats,
+.course-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+.feature-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+
+
+
+@media(max-width:700px){
+
+
+header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+nav{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+
+.hero h1{
+
+    font-size:35px;
+
+}
+
+
+.stats,
+.course-container,
+.feature-container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+section h2{
+
+    font-size:28px;
+
+}
+
+
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 12px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+}
+
+/* Logo / title */
+nav .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+    margin-right: 10px;
+}
+
+/* Navigation links */
+nav a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #4b1fa1;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 6px 8px;
+    border-radius: 6px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* Hover effect */
+nav a:hover {
+    background-color: #f0eaff;
+    color: #6c32d9;
+}
+
+/* Active link */
+nav a.active {
+    background-color: #e8ddff;
+    color: #5b21b6;
+    font-weight: 600;
+}
+
+/* Logout */
+nav a.logout {
+    margin-left: auto;
+    color: #c62828;
+}
+
+nav a.logout:hover {
+    background-color: #ffebee;
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard | MathNova</title>
+
+    <link rel="stylesheet" href="student.css">
+    <link rel="stylesheet" href="navigate.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        📘 MathNova
+    </div>
+
+    <nav>
+
+        <a href="student.html">🏠 Dashboard</a>
+
+        <a href="courses.html">📚 Courses</a>
+
+        <a href="practice.html">📝 Practice</a>
+
+        <a href="graph.html">📈 Graph Lab</a>
+
+        <a href="geometry.html">📐 Geometry Lab</a>
+
+        <a href="scores.html">📊 Scores</a>
+
+        <a href="progress.html">🏆 Progress</a>
+
+        <a href="settings.html">⚙ Settings</a>
+
+        <a href="math.html" onclick="logout()">🚪 Logout</a>
+
+    </nav>
+
+</header>
+
+
+<section class="dashboard">
+
+<h1>👋 Welcome Back, Student</h1>
+
+<p>Continue your mathematics learning journey.</p>
+
+<!-- Statistics -->
+
+<div class="dashboard-cards">
+
+<div class="card">
+<h3>📚 Lessons</h3>
+<h2>24</h2>
+<p>Available Lessons</p>
+</div>
+
+<div class="card">
+<h3>📝 Quizzes</h3>
+<h2>12</h2>
+<p>Completed</p>
+</div>
+
+<div class="card">
+<h3>🏆 XP</h3>
+<h2>1450</h2>
+<p>Total Points</p>
+</div>
+
+<div class="card">
+<h3>⭐ Level</h3>
+<h2>5</h2>
+<p>Current Level</p>
+</div>
+
+</div>
+
+<br>
+
+<!-- Continue Learning -->
+
+<h2>📚 Continue Learning</h2>
+
+<div class="dashboard-cards">
+
+<a href="algebra.html" class="card-link">
+<div class="card">
+<h3>📘 Algebra</h3>
+<p>Learn equations and expressions.</p>
+</div>
+</a>
+
+<a href="geometry.html" class="card-link">
+<div class="card">
+<h3>📐 Geometry</h3>
+<p>Shapes, angles and constructions.</p>
+</div>
+</a>
+
+<a href="trigonometry.html" class="card-link">
+<div class="card">
+<h3>📏 Trigonometry</h3>
+<p>Master trigonometric identities.</p>
+</div>
+</a>
+
+<a href="calculus.html" class="card-link">
+<div class="card">
+<h3>📈 Calculus</h3>
+<p>Differentiation and Integration.</p>
+</div>
+</a>
+
+</div>
+
+<br>
+
+<!-- Quick Actions -->
+
+<h2>⚡ Quick Actions</h2>
+
+<div class="dashboard-cards">
+
+<a href="practice.html" class="card-link">
+<div class="card">
+<h3>📝 Practice</h3>
+<p>Solve practice questions.</p>
+</div>
+</a>
+
+<a href="graph.html" class="card-link">
+<div class="card">
+<h3>📈 Graph Lab</h3>
+<p>Plot mathematical graphs.</p>
+</div>
+</a>
+
+<a href="geometry.html" class="card-link">
+<div class="card">
+<h3>📐 Geometry Lab</h3>
+<p>Interactive geometry tools.</p>
+</div>
+</a>
+
+<a href="formulas.html" class="card-link">
+<div class="card">
+<h3>🧮 Formula Library</h3>
+<p>View important formulas.</p>
+</div>
+</a>
+
+</div>
+
+<br>
+
+<!-- Progress -->
+
+<h2>📊 Learning Progress</h2>
+
+<div class="settings-card">
+
+<p>Overall Progress</p>
+
+<div class="progress-bar">
+
+<div id="progress" style="width:65%;">
+65%
+</div>
+
+</div>
+
+</div>
+
+<br>
+
+<!-- Teacher Announcement -->
+
+<h2>📢 Teacher Announcement</h2>
+
+<div class="settings-card">
+
+<p id="announcementDisplay">
+
+📢 Welcome to MathNova! Complete today's Algebra lesson.
+
+</p>
+
+</div>
+
+<br>
+
+<!-- Upcoming Activities -->
+
+<h2>📅 Upcoming Activities</h2>
+
+<div class="settings-card">
+
+<ul>
+
+<li>📝 Algebra Quiz - Tomorrow</li>
+
+<li>📘 Geometry Assignment - Friday</li>
+
+<li>📈 Graph Lab Practice - Saturday</li>
+
+</ul>
+
+</div>
+
+<br>
+
+<!-- Achievements -->
+
+<h2>🏅 Achievements</h2>
+
+<div class="dashboard-cards">
+
+<div class="card">
+🥇<br><br>
+Quiz Master
+</div>
+
+<div class="card">
+🔥<br><br>
+7 Day Streak
+</div>
+
+<div class="card">
+📘<br><br>
+Fast Learner
+</div>
+
+<div class="card">
+🏆<br><br>
+Level 5
+</div>
+
+</div>
+
+<br>
+
+<!-- Recent Scores -->
+
+<h2>📊 Recent Scores</h2>
+
+<table class="score-table">
+
+<tr>
+
+<th>Course</th>
+
+<th>Score</th>
+
+</tr>
+
+<tr>
+
+<td>Algebra</td>
+
+<td>9 / 10</td>
+
+</tr>
+
+<tr>
+
+<td>Geometry</td>
+
+<td>8 / 10</td>
+
+</tr>
+
+<tr>
+
+<td>Trigonometry</td>
+
+<td>10 / 10</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

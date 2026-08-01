@@ -1,0 +1,370 @@
+/* =================================
+   REGISTER PAGE DESIGN
+   MathNova
+================================= */
+
+
+/* Background */
+
+.login-body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed,
+        #06b6d4
+    );
+
+    font-family:"Poppins",sans-serif;
+
+}
+
+
+
+/* Register Container */
+
+
+.login-container{
+
+    width:420px;
+
+    padding:40px;
+
+    background:rgba(255,255,255,0.95);
+
+    border-radius:25px;
+
+    box-shadow:
+
+    0 20px 45px rgba(0,0,0,.25);
+
+    text-align:center;
+
+    animation:registerAnimation .8s ease;
+
+}
+
+
+
+@keyframes registerAnimation{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+
+
+/* Heading */
+
+
+.login-container h1{
+
+    color:#2563eb;
+
+    font-size:35px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.login-container p{
+
+    color:#555;
+
+    margin-bottom:25px;
+
+}
+
+
+
+
+
+/* Labels */
+
+
+.login-container label{
+
+    display:block;
+
+    text-align:left;
+
+    margin-top:15px;
+
+    font-weight:600;
+
+    color:#1f2937;
+
+}
+
+
+
+
+
+/* Input Fields */
+
+
+.login-container input,
+.login-container select{
+
+    width:100%;
+
+    padding:14px;
+
+    margin-top:8px;
+
+    border-radius:12px;
+
+    border:2px solid #dbeafe;
+
+    outline:none;
+
+    font-size:16px;
+
+    background:white;
+
+    transition:.3s;
+
+}
+
+
+
+.login-container input:focus,
+.login-container select:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:
+
+    0 0 10px rgba(37,99,235,.3);
+
+}
+
+
+
+
+
+/* Select Box */
+
+
+.login-container select{
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+/* Create Account Button */
+
+
+.login-btn{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.login-btn:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:
+
+    0 10px 25px rgba(37,99,235,.4);
+
+}
+
+
+
+
+
+/* OR Divider */
+
+
+.or{
+
+    margin:25px 0;
+
+    color:#777;
+
+    font-weight:bold;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:15px;
+
+}
+
+
+
+.or::before,
+.or::after{
+
+    content:"";
+
+    height:1px;
+
+    background:#ddd;
+
+    width:40%;
+
+}
+
+
+
+
+
+/* Google Button */
+
+
+.google-btn{
+
+    width:100%;
+
+    padding:13px;
+
+    border-radius:30px;
+
+    background:white;
+
+    border:2px solid #ddd;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.google-btn:hover{
+
+    background:#f3f4f6;
+
+    transform:scale(1.03);
+
+}
+
+
+
+
+
+/* Login Link */
+
+
+.register{
+
+    margin-top:25px;
+
+}
+
+
+
+.register a{
+
+    color:#2563eb;
+
+    font-weight:bold;
+
+    text-decoration:none;
+
+}
+
+
+
+.register a:hover{
+
+    text-decoration:underline;
+
+}
+
+
+
+
+
+/* Mobile Responsive */
+
+
+@media(max-width:500px){
+
+
+.login-container{
+
+    width:88%;
+
+    padding:30px;
+
+}
+
+
+
+.login-container h1{
+
+    font-size:28px;
+
+}
+
+
+
+}

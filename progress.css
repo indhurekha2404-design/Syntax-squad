@@ -1,0 +1,464 @@
+/* =====================================
+   PROGRESS DASHBOARD DESIGN
+   MathNova
+===================================== */
+
+
+/* Main Section */
+
+.practice-page{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:40px 0;
+
+    animation:progressFade 0.8s ease;
+
+}
+
+
+@keyframes progressFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* Page Heading */
+
+
+.practice-page>h1{
+
+    text-align:center;
+
+    font-size:42px;
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.practice-page>p{
+
+    text-align:center;
+
+    color:#555;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+/* Dashboard Cards */
+
+
+.dashboard{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    margin:50px 0;
+
+}
+
+
+
+.card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+    border-top:5px solid #2563eb;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+
+    0 15px 35px rgba(37,99,235,.25);
+
+}
+
+
+
+.card h2{
+
+    color:#1e40af;
+
+    font-size:22px;
+
+}
+
+
+
+.card h1{
+
+    color:#2563eb;
+
+    font-size:45px;
+
+    margin:15px 0;
+
+}
+
+
+
+.card p{
+
+    font-size:16px;
+
+}
+
+
+
+
+
+/* Progress Section */
+
+
+.progress-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.1);
+
+    margin-bottom:40px;
+
+}
+
+
+
+.progress-card h2{
+
+    color:#1e40af;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+/* Progress Bar */
+
+
+.progress-bar{
+
+    width:100%;
+
+    height:35px;
+
+    background:#e5e7eb;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+}
+
+
+
+.progress-fill{
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+    90deg,
+    #2563eb,
+    #22c55e
+    );
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:white;
+
+    font-weight:bold;
+
+    border-radius:30px;
+
+    animation:loadProgress 2s;
+
+}
+
+
+
+@keyframes loadProgress{
+
+    from{
+
+        width:0;
+
+    }
+
+}
+
+
+
+
+
+/* Score Table */
+
+
+.score-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.1);
+
+}
+
+
+
+.score-table th{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:18px;
+
+    font-size:17px;
+
+}
+
+
+
+.score-table td{
+
+    padding:16px;
+
+    text-align:center;
+
+    border-bottom:1px solid #e5e7eb;
+
+    font-size:16px;
+
+}
+
+
+
+.score-table tr{
+
+    transition:.3s;
+
+}
+
+
+
+.score-table tr:hover{
+
+    background:#eff6ff;
+
+}
+
+
+
+
+
+/* Achievement / Goal Cards */
+
+
+.dashboard .card p{
+
+    margin:12px;
+
+    font-size:17px;
+
+}
+
+
+
+
+
+/* Different Card Colors */
+
+
+.dashboard .card:nth-child(1){
+
+    border-color:#2563eb;
+
+}
+
+
+.dashboard .card:nth-child(2){
+
+    border-color:#22c55e;
+
+}
+
+
+.dashboard .card:nth-child(3){
+
+    border-color:#f59e0b;
+
+}
+
+
+.dashboard .card:nth-child(4){
+
+    border-color:#ef4444;
+
+}
+
+
+
+
+
+/* Footer */
+
+
+footer{
+
+    background:#111827;
+
+    color:white;
+
+    padding:25px;
+
+    text-align:center;
+
+    margin-top:50px;
+
+}
+
+
+
+
+
+/* Responsive Design */
+
+
+@media(max-width:1000px){
+
+
+.dashboard{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+.score-table{
+
+    font-size:14px;
+
+}
+
+
+}
+
+
+
+@media(max-width:700px){
+
+
+.practice-page{
+
+    width:92%;
+
+}
+
+
+
+.practice-page>h1{
+
+    font-size:32px;
+
+}
+
+
+
+.dashboard{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.score-table{
+
+    display:block;
+
+    overflow-x:auto;
+
+}
+
+
+
+.score-table th,
+.score-table td{
+
+    white-space:nowrap;
+
+}
+
+
+}

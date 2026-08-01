@@ -1,0 +1,425 @@
+/* ==================================
+   SCORES DASHBOARD DESIGN
+   MathNova
+================================== */
+
+
+/* Main Section */
+
+.practice-page{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:40px 0;
+
+    animation:scoreFade .8s ease;
+
+}
+
+
+
+@keyframes scoreFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+
+
+/* Heading */
+
+
+.practice-page h1{
+
+    text-align:center;
+
+    font-size:42px;
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.practice-page>p{
+
+    text-align:center;
+
+    color:#555;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+/* Dashboard Cards */
+
+
+.dashboard{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    margin:50px 0;
+
+}
+
+
+
+.card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.12);
+
+    border-top:5px solid #2563eb;
+
+    transition:.4s;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+
+    0 15px 35px rgba(37,99,235,.25);
+
+}
+
+
+
+.card h2{
+
+    color:#1e40af;
+
+    font-size:22px;
+
+}
+
+
+
+.card h1{
+
+    color:#2563eb;
+
+    font-size:45px;
+
+    margin-top:15px;
+
+}
+
+
+
+
+
+/* Different Card Colors */
+
+
+.dashboard .card:nth-child(1){
+
+    border-color:#2563eb;
+
+}
+
+
+.dashboard .card:nth-child(2){
+
+    border-color:#22c55e;
+
+}
+
+
+.dashboard .card:nth-child(3){
+
+    border-color:#f59e0b;
+
+}
+
+
+.dashboard .card:nth-child(4){
+
+    border-color:#ef4444;
+
+}
+
+
+
+
+
+/* Score Table */
+
+
+.score-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.12);
+
+    margin-bottom:50px;
+
+}
+
+
+
+.score-table th{
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #2563eb,
+    #7c3aed
+    );
+
+    color:white;
+
+    padding:18px;
+
+    font-size:17px;
+
+}
+
+
+
+.score-table td{
+
+    padding:16px;
+
+    text-align:center;
+
+    border-bottom:1px solid #e5e7eb;
+
+    font-size:16px;
+
+}
+
+
+
+.score-table tr{
+
+    transition:.3s;
+
+}
+
+
+
+.score-table tr:hover{
+
+    background:#eff6ff;
+
+}
+
+
+
+
+
+/* Overall Progress Heading */
+
+
+.practice-page h2{
+
+    color:#1e40af;
+
+    margin-top:35px;
+
+    font-size:28px;
+
+}
+
+
+
+
+
+/* Progress Bar */
+
+
+.progress-bar{
+
+    width:100%;
+
+    height:35px;
+
+    background:#e5e7eb;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    margin-top:20px;
+
+}
+
+
+
+.progress-fill{
+
+    height:100%;
+
+    width:0%;
+
+    background:
+
+    linear-gradient(
+    90deg,
+    #2563eb,
+    #22c55e
+    );
+
+    border-radius:30px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-weight:bold;
+
+    transition:1s;
+
+    animation:progressLoad 2s;
+
+}
+
+
+
+@keyframes progressLoad{
+
+    from{
+
+        width:0;
+
+    }
+
+}
+
+
+
+
+
+/* Status Styling */
+
+
+.score-table td:last-child{
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+/* Responsive */
+
+
+@media(max-width:1000px){
+
+
+.dashboard{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+
+
+
+@media(max-width:700px){
+
+
+.practice-page{
+
+    width:92%;
+
+}
+
+
+.practice-page h1{
+
+    font-size:32px;
+
+}
+
+
+.dashboard{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.score-table{
+
+    display:block;
+
+    overflow-x:auto;
+
+}
+
+
+
+.score-table th,
+.score-table td{
+
+    white-space:nowrap;
+
+}
+
+
+}

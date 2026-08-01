@@ -1,0 +1,441 @@
+/* =====================================
+   CALCULUS PAGE DESIGN - MATHNOVA
+===================================== */
+
+
+/* PAGE BACKGROUND */
+
+.dashboard {
+
+    padding:40px 8%;
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(135deg,#eef2ff,#f8fafc);
+
+}
+
+
+
+/* MAIN TITLE */
+
+.dashboard h1 {
+
+    text-align:center;
+
+    font-size:45px;
+
+    color:#4f46e5;
+
+    margin-bottom:15px;
+
+    animation:fadeDown 0.8s ease;
+
+}
+
+
+
+.dashboard > p {
+
+    text-align:center;
+
+    font-size:19px;
+
+    color:#64748b;
+
+}
+
+
+
+/* LINE */
+
+.dashboard hr {
+
+    border:none;
+
+    height:2px;
+
+    background:#c7d2fe;
+
+    margin:35px 0;
+
+}
+
+
+
+/* SECTION TITLES */
+
+.dashboard h2 {
+
+    color:#4338ca;
+
+    font-size:30px;
+
+    margin-top:35px;
+
+    position:relative;
+
+}
+
+
+.dashboard h2::after {
+
+    content:"";
+
+    width:70px;
+
+    height:4px;
+
+    background:#8b5cf6;
+
+    position:absolute;
+
+    bottom:-8px;
+
+    left:0;
+
+    border-radius:10px;
+
+}
+
+
+
+/* =====================================
+   CHAPTER CARDS
+===================================== */
+
+
+.dashboard-cards {
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(230px,1fr));
+
+    gap:25px;
+
+    margin-top:30px;
+
+}
+
+
+
+.card {
+
+    background:white;
+
+    padding:30px 20px;
+
+    text-align:center;
+
+    border-radius:22px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:#3730a3;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.08);
+
+    border-top:6px solid #6366f1;
+
+    transition:0.4s;
+
+}
+
+
+
+.card h3 {
+
+    color:#7c3aed;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.card:hover {
+
+    transform:translateY(-12px);
+
+    box-shadow:
+    0 20px 40px rgba(79,70,229,0.25);
+
+    background:
+    linear-gradient(135deg,#ffffff,#eef2ff);
+
+}
+
+
+
+/* =====================================
+   CONTENT BOXES
+===================================== */
+
+
+.settings-card {
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:22px;
+
+    border-left:7px solid #6366f1;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+
+}
+
+
+
+.settings-card:hover {
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 15px 35px rgba(99,102,241,0.25);
+
+}
+
+
+
+/* LIST STYLE */
+
+
+.settings-card ul {
+
+    font-size:18px;
+
+    line-height:2;
+
+}
+
+
+.settings-card li::marker {
+
+    color:#7c3aed;
+
+}
+
+
+
+/* =====================================
+   MATH FORMULAS
+===================================== */
+
+
+.settings-card p {
+
+    font-size:18px;
+
+    line-height:2;
+
+}
+
+
+
+.MathJax {
+
+    font-size:1.2em !important;
+
+}
+
+
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+
+button {
+
+    padding:14px 30px;
+
+    border:none;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    background:
+    linear-gradient(135deg,#4f46e5,#9333ea);
+
+    transition:0.3s;
+
+}
+
+
+
+button:hover {
+
+    transform:scale(1.08);
+
+    box-shadow:
+    0 10px 25px rgba(124,58,237,0.4);
+
+}
+
+
+
+/* REMOVE LINK UNDERLINE */
+
+
+.dashboard a {
+
+    text-decoration:none;
+
+}
+
+
+
+/* =====================================
+   PROGRESS BAR
+===================================== */
+
+
+.progress-bar {
+
+    height:35px;
+
+    width:100%;
+
+    background:#e2e8f0;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+}
+
+
+
+#progress {
+
+    height:100%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:white;
+
+    font-weight:bold;
+
+    background:
+    linear-gradient(90deg,#4f46e5,#22c55e);
+
+    border-radius:30px;
+
+    animation:progressAnimation 2s ease;
+
+}
+
+
+
+
+/* =====================================
+   ANIMATIONS
+===================================== */
+
+
+@keyframes fadeDown {
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(-30px);
+
+    }
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+@keyframes progressAnimation {
+
+    from {
+
+        width:0;
+
+    }
+
+}
+
+
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+
+@media(max-width:768px){
+
+
+.dashboard {
+
+    padding:25px;
+
+}
+
+
+.dashboard h1 {
+
+    font-size:32px;
+
+}
+
+
+.dashboard h2 {
+
+    font-size:24px;
+
+}
+
+
+.dashboard-cards {
+
+    grid-template-columns:1fr;
+
+}
+
+
+.settings-card {
+
+    padding:20px;
+
+}
+
+
+button {
+
+    width:100%;
+
+}
+
+
+}

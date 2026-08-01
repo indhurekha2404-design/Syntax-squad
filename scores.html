@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Scores - MathVerse</title>
+
+    <link rel="stylesheet" href="scorces.css">
+    <link rel="stylesheet" href="navigate.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+📘 MathNova
+</div>
+
+<nav>
+
+<a href="student.html">Dashboard</a>
+<a href="courses.html">Courses</a>
+<a href="practice.html">Practice</a>
+<a href="scores.html">Scores</a>
+<a href="progress.html">Progress</a>
+<a href="settings.html">Settings</a>
+<a href="math.html">Logout</a>
+
+</nav>
+
+</header>
+
+<section class="practice-page">
+
+<h1>📊 My Performance Dashboard</h1>
+
+<p>Track your learning progress and achievements.</p>
+
+<div class="dashboard">
+
+<div class="card">
+<h2>Total Quizzes</h2>
+<h1 id="quizCount">0</h1>
+</div>
+
+<div class="card">
+<h2>Average Score</h2>
+<h1 id="averageScore">0%</h1>
+</div>
+
+<div class="card">
+<h2>Best Subject</h2>
+<h1 id="bestSubject">-</h1>
+</div>
+
+<div class="card">
+<h2>Highest Score</h2>
+<h1 id="highestScore">0</h1>
+</div>
+
+</div>
+
+<table class="score-table">
+
+<tr>
+<th>Subject</th>
+<th>Score</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>Algebra</td>
+<td id="algebraScore">0 / 3</td>
+<td id="algebraStatus">-</td>
+</tr>
+
+<tr>
+<td>Geometry</td>
+<td id="geometryScore">0 / 3</td>
+<td id="geometryStatus">-</td>
+</tr>
+
+<tr>
+<td>Calculus</td>
+<td id="calculusScore">0 / 3</td>
+<td id="calculusStatus">-</td>
+</tr>
+
+<tr>
+<td>Statistics</td>
+<td id="statisticsScore">0 / 3</td>
+<td id="statisticsStatus">-</td>
+</tr>
+
+</table>
+
+<h2>Overall Progress</h2>
+
+<div class="progress-bar">
+
+<div class="progress-fill" id="progressFill">
+
+0%
+
+</div>
+
+</div>
+
+</section>
+
+<script src="scores.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

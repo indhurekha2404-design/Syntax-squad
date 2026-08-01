@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Practice | MathNova</title>
+
+<link rel="stylesheet" href="math.css">
+<link rel="stylesheet" href="practice.css">
+<link rel="stylesheet" href="navigate.css">
+
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+<script id="MathJax-script" async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+📘 MathNova
+</div>
+
+<nav>
+
+<a href="student.html">Dashboard</a>
+<a href="courses.html">Courses</a>
+<a href="practice.html" class="active">Practice</a>
+<a href="scores.html">Scores</a>
+<a href="settings.html">Settings</a>
+<a href="math.html">Logout</a>
+
+</nav>
+
+</header>
+
+<section class="practice-hero">
+
+<h1>📝 Mathematics Practice Arena</h1>
+
+<p>
+Practice chapter-wise questions, improve your skills and track your progress.
+</p>
+
+</section>
+
+<section class="topic-section">
+
+<h2>Select a Topic</h2>
+
+<div class="topic-grid">
+
+<div class="topic-card" onclick="loadTopic('algebra')">
+<h3>✖ Algebra</h3>
+<p>Equations, expressions and identities</p>
+</div>
+
+<div class="topic-card" onclick="loadTopic('geometry')">
+<h3>📐 Geometry</h3>
+<p>Shapes, angles and constructions</p>
+</div>
+
+<div class="topic-card" onclick="loadTopic('trigonometry')">
+<h3>📏 Trigonometry</h3>
+<p>Ratios, identities and graphs</p>
+</div>
+
+<div class="topic-card" onclick="loadTopic('coordinate')">
+<h3>📍 Coordinate Geometry</h3>
+<p>Distance, slope and equations</p>
+</div>
+
+<div class="topic-card" onclick="loadTopic('calculus')">
+<h3>∫ Calculus</h3>
+<p>Limits, derivatives and integration</p>
+</div>
+
+<div class="topic-card" onclick="loadTopic('matrices')">
+<h3>🧮 Matrices</h3>
+<p>Matrices and determinants</p>
+</div>
+
+<div class="topic-card" onclick="loadTopic('probability')">
+<h3>🎲 Probability</h3>
+<p>Random events and distributions</p>
+</div>
+
+<div class="topic-card" onclick="loadTopic('statistics')">
+<h3>📊 Statistics</h3>
+<p>Mean, median, mode and charts</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="quiz-section">
+
+<div class="quiz-header">
+
+<h2 id="quizTitle">
+Choose a Topic
+</h2>
+
+<div class="timer-box">
+
+⏱ Time Left:
+<span id="timer">
+10:00
+</span>
+
+</div>
+
+</div>
+
+<div class="progress-container">
+
+<div id="progressBar">
+
+</div>
+
+</div>
+
+<div id="questionBox">
+
+<div class="welcome-card">
+
+<h2>
+Welcome to MathNova Practice
+</h2>
+
+<p>
+
+Select any topic above to begin solving questions.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="quiz-buttons">
+
+<button id="prevBtn" onclick="previousQuestion()">
+
+⬅ Previous
+
+</button>
+
+<button id="nextBtn" onclick="nextQuestion()">
+
+Next ➜
+
+</button>
+
+</div>
+
+</section>
+
+<section class="result-section" id="resultSection">
+
+<h2>
+
+🏆 Quiz Completed
+
+</h2>
+
+<div class="score-circle">
+
+<span id="finalScore">
+
+0%
+
+</span>
+
+</div>
+
+<p id="scoreMessage">
+
+Excellent!
+
+</p>
+
+<button onclick="restartQuiz()">
+
+🔄 Practice Again
+
+</button>
+
+</section>
+
+
+
+<footer class="practice-footer">
+
+<p>
+
+© 2026 MathNova | Learn • Practice • Excel
+
+</p>
+
+</footer>
+
+<script src="practice.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+

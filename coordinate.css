@@ -1,0 +1,520 @@
+/* =====================================
+   COORDINATE GEOMETRY PAGE CSS
+   MATHNOVA
+===================================== */
+
+
+/* BODY */
+
+body {
+
+    margin:0;
+
+    font-family:'Poppins',Arial,sans-serif;
+
+    background:
+    linear-gradient(135deg,#eef2ff,#f8fafc);
+
+    color:#1e293b;
+
+}
+
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+
+header {
+
+    background:
+    linear-gradient(90deg,#2563eb,#7c3aed);
+
+    color:white;
+
+    padding:18px 40px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,0.15);
+
+}
+
+
+
+.logo {
+
+    font-size:28px;
+
+    font-weight:bold;
+
+}
+
+
+
+nav {
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+
+
+nav a {
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:0.3s;
+
+}
+
+
+
+nav a:hover {
+
+    color:#fde68a;
+
+    transform:translateY(-3px);
+
+}
+
+
+
+/* =====================================
+   MAIN DASHBOARD
+===================================== */
+
+
+.dashboard {
+
+    padding:40px 8%;
+
+}
+
+
+
+.dashboard h1 {
+
+    text-align:center;
+
+    font-size:45px;
+
+    color:#2563eb;
+
+    animation:titleAnimation 0.8s ease;
+
+}
+
+
+
+.dashboard > p {
+
+    text-align:center;
+
+    font-size:18px;
+
+    color:#64748b;
+
+}
+
+
+
+.dashboard hr {
+
+    margin:35px 0;
+
+    border:none;
+
+    height:2px;
+
+    background:#bfdbfe;
+
+}
+
+
+
+/* =====================================
+   HEADINGS
+===================================== */
+
+
+.dashboard h2 {
+
+    color:#1d4ed8;
+
+    font-size:30px;
+
+    margin-top:35px;
+
+}
+
+
+
+/* =====================================
+   CHAPTER CARDS
+===================================== */
+
+
+.dashboard-cards {
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+    margin-top:25px;
+
+}
+
+
+
+.card {
+
+    background:white;
+
+    padding:30px 20px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:#1e40af;
+
+    border-top:6px solid #2563eb;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.08);
+
+    transition:0.4s;
+
+}
+
+
+
+.card h3 {
+
+    color:#7c3aed;
+
+    margin-bottom:12px;
+
+}
+
+
+
+.card:hover {
+
+    transform:translateY(-12px) rotate(1deg);
+
+    box-shadow:
+    0 20px 40px rgba(37,99,235,0.25);
+
+}
+
+
+
+/* =====================================
+   CONTENT CARDS
+===================================== */
+
+
+.settings-card {
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    border-left:7px solid #2563eb;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+
+}
+
+
+
+.settings-card:hover {
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 15px 35px rgba(37,99,235,0.2);
+
+}
+
+
+
+/* LIST */
+
+.settings-card ul {
+
+    font-size:18px;
+
+    line-height:2;
+
+}
+
+
+.settings-card li::marker {
+
+    color:#2563eb;
+
+}
+
+
+
+/* =====================================
+   FORMULA SECTION
+===================================== */
+
+
+.settings-card p {
+
+    font-size:18px;
+
+    line-height:2;
+
+}
+
+
+
+.MathJax {
+
+    font-size:1.2em !important;
+
+}
+
+
+
+/* Formula divider */
+
+.settings-card hr {
+
+    border:none;
+
+    height:1px;
+
+    background:#dbeafe;
+
+    margin:20px 0;
+
+}
+
+
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+
+button {
+
+    background:
+    linear-gradient(135deg,#2563eb,#7c3aed);
+
+    color:white;
+
+    padding:14px 30px;
+
+    border:none;
+
+    border-radius:30px;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+
+button:hover {
+
+    transform:scale(1.08);
+
+    box-shadow:
+    0 10px 25px rgba(37,99,235,0.4);
+
+}
+
+
+
+.dashboard a {
+
+    text-decoration:none;
+
+}
+
+
+
+/* =====================================
+   PROGRESS BAR
+===================================== */
+
+
+.progress-bar {
+
+    width:100%;
+
+    height:35px;
+
+    background:#dbeafe;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+}
+
+
+
+#progress {
+
+    height:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-weight:bold;
+
+    background:
+    linear-gradient(90deg,#2563eb,#22c55e);
+
+    border-radius:30px;
+
+    animation:progressLoad 2s ease;
+
+}
+
+
+
+/* =====================================
+   ANIMATIONS
+===================================== */
+
+
+@keyframes titleAnimation {
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(-30px);
+
+    }
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+@keyframes progressLoad {
+
+    from {
+
+        width:0;
+
+    }
+
+}
+
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+
+@media(max-width:900px){
+
+
+header {
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+nav {
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+
+.dashboard {
+
+    padding:25px;
+
+}
+
+
+.dashboard h1 {
+
+    font-size:32px;
+
+}
+
+
+.dashboard-cards {
+
+    grid-template-columns:1fr;
+
+}
+
+
+.settings-card {
+
+    padding:20px;
+
+}
+
+
+button {
+
+    width:100%;
+
+}
+
+}

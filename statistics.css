@@ -1,0 +1,562 @@
+/* ==================================
+   STATISTICS PAGE DESIGN
+   MathNova
+================================== */
+
+
+/* Main Dashboard */
+
+.dashboard{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:40px 0;
+
+    animation:statisticsFade .8s ease;
+
+}
+
+
+
+@keyframes statisticsFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+
+
+/* Heading */
+
+
+.dashboard h1{
+
+    text-align:center;
+
+    font-size:42px;
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.dashboard>p{
+
+    text-align:center;
+
+    font-size:18px;
+
+    color:#555;
+
+}
+
+
+
+.dashboard hr{
+
+    border:none;
+
+    height:2px;
+
+    background:#dbeafe;
+
+    margin:35px 0;
+
+}
+
+
+
+
+
+/* Section Titles */
+
+
+.dashboard h2{
+
+    color:#1e40af;
+
+    font-size:28px;
+
+    margin-top:35px;
+
+}
+
+
+
+
+
+/* Chapter Grid */
+
+
+.dashboard-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    margin-top:25px;
+
+}
+
+
+
+
+
+/* Chapter Cards */
+
+
+.card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.12);
+
+    border-top:5px solid #2563eb;
+
+    transition:.4s;
+
+}
+
+
+
+.card h3{
+
+    color:#2563eb;
+
+    margin-bottom:12px;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+
+    0 15px 35px rgba(37,99,235,.25);
+
+}
+
+
+
+
+
+/* Chapter Colors */
+
+
+.card:nth-child(1){
+
+    border-color:#ef4444;
+
+}
+
+
+.card:nth-child(2){
+
+    border-color:#22c55e;
+
+}
+
+
+.card:nth-child(3){
+
+    border-color:#f59e0b;
+
+}
+
+
+.card:nth-child(4){
+
+    border-color:#8b5cf6;
+
+}
+
+
+.card:nth-child(5){
+
+    border-color:#ec4899;
+
+}
+
+
+.card:nth-child(6){
+
+    border-color:#06b6d4;
+
+}
+
+
+
+
+
+/* Content Boxes */
+
+
+.settings-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.1);
+
+    margin-top:15px;
+
+    transition:.3s;
+
+}
+
+
+
+.settings-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+
+/* Lists */
+
+
+.settings-card ul{
+
+    line-height:2;
+
+    font-size:17px;
+
+}
+
+
+
+.settings-card li::marker{
+
+    color:#2563eb;
+
+}
+
+
+
+
+
+/* MathJax Formula */
+
+
+mjx-container{
+
+    font-size:120% !important;
+
+    color:#111827;
+
+}
+
+
+
+
+
+/* Statistics Table */
+
+
+.score-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.12);
+
+}
+
+
+
+.score-table th{
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #2563eb,
+    #7c3aed
+    );
+
+    color:white;
+
+    padding:18px;
+
+    font-size:17px;
+
+}
+
+
+
+.score-table td{
+
+    padding:16px;
+
+    text-align:center;
+
+    border-bottom:1px solid #e5e7eb;
+
+}
+
+
+
+.score-table tr{
+
+    transition:.3s;
+
+}
+
+
+
+.score-table tr:hover{
+
+    background:#eff6ff;
+
+}
+
+
+
+
+
+/* Buttons */
+
+
+button{
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #2563eb,
+    #7c3aed
+    );
+
+    color:white;
+
+    border:none;
+
+    padding:13px 30px;
+
+    border-radius:30px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+button:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:
+
+    0 10px 25px rgba(37,99,235,.35);
+
+}
+
+
+
+
+
+/* Progress Bar */
+
+
+.progress-bar{
+
+    height:30px;
+
+    width:100%;
+
+    background:#e5e7eb;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+
+
+#progress{
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+    90deg,
+    #2563eb,
+    #22c55e
+    );
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-weight:bold;
+
+    border-radius:20px;
+
+    animation:progressStats 2s;
+
+}
+
+
+
+@keyframes progressStats{
+
+    from{
+
+        width:0;
+
+    }
+
+}
+
+
+
+
+
+/* Navigation Buttons */
+
+
+.dashboard a button{
+
+    margin:10px;
+
+}
+
+
+
+
+
+/* Responsive */
+
+
+@media(max-width:1000px){
+
+
+.dashboard-cards{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+
+
+
+@media(max-width:700px){
+
+
+.dashboard{
+
+    width:92%;
+
+}
+
+
+
+.dashboard h1{
+
+    font-size:32px;
+
+}
+
+
+
+.dashboard-cards{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.dashboard h2{
+
+    font-size:24px;
+
+}
+
+
+
+.score-table{
+
+    display:block;
+
+    overflow-x:auto;
+
+}
+
+
+
+.score-table th,
+.score-table td{
+
+    white-space:nowrap;
+
+}
+
+
+}

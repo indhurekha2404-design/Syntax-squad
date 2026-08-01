@@ -1,0 +1,271 @@
+/* =====================================
+   GLOBAL NAVIGATION BAR - MathNova
+===================================== */
+
+
+header{
+
+    width:100%;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 5%;
+
+    box-sizing:border-box;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,0.15);
+
+}
+
+
+
+/* Logo */
+
+.logo{
+
+    color:white;
+
+    font-size:28px;
+
+    font-weight:800;
+
+    letter-spacing:1px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.logo:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+
+/* Navigation Container */
+
+
+nav{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+
+
+/* Navigation Links */
+
+
+nav a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    padding:10px 18px;
+
+    border-radius:25px;
+
+    transition:.35s;
+
+    position:relative;
+
+}
+
+
+
+/* Hover Effect */
+
+
+nav a:hover{
+
+    background:white;
+
+    color:#2563eb;
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,.2);
+
+}
+
+
+
+
+/* Active Page */
+
+nav a.active{
+
+    background:white;
+
+    color:#2563eb;
+
+}
+
+
+
+
+
+/* Login Button Highlight */
+
+
+nav a:last-child{
+
+    background:#22c55e;
+
+    color:white;
+
+}
+
+
+
+nav a:last-child:hover{
+
+    background:white;
+
+    color:#16a34a;
+
+}
+
+
+
+
+
+/* =====================================
+   TABLET RESPONSIVE
+===================================== */
+
+
+@media(max-width:1000px){
+
+
+header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+
+nav{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+
+}
+
+
+
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+
+@media(max-width:600px){
+
+
+header{
+
+    padding:15px;
+
+}
+
+
+
+.logo{
+
+    font-size:24px;
+
+}
+
+
+
+nav{
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:10px;
+
+}
+
+
+
+nav a{
+
+    text-align:center;
+
+    font-size:14px;
+
+    padding:10px;
+
+}
+
+
+
+}
+
+
+
+
+/* =====================================
+   SMALL MOBILE
+===================================== */
+
+
+@media(max-width:350px){
+
+
+nav{
+
+    grid-template-columns:1fr;
+
+}
+
+
+}

@@ -1,0 +1,444 @@
+/* ==============================
+   GEOMETRY PAGE DESIGN
+   MathNova
+================================*/
+
+
+/* Main Dashboard Section */
+
+.dashboard{
+
+    padding:40px;
+    max-width:1200px;
+    margin:auto;
+
+}
+
+
+/* Heading */
+
+.dashboard h1{
+
+    font-size:42px;
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:10px;
+
+}
+
+
+.dashboard>p{
+
+    text-align:center;
+    font-size:18px;
+    color:#555;
+
+}
+
+
+/* Horizontal line */
+
+.dashboard hr{
+
+    margin:30px 0;
+    border:none;
+    height:2px;
+    background:#dbeafe;
+
+}
+
+
+
+/* Section Headings */
+
+.dashboard h2{
+
+    margin-top:35px;
+    color:#1e40af;
+    font-size:28px;
+
+}
+
+
+
+/* Chapter Cards Container */
+
+
+.dashboard-cards{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-top:20px;
+
+}
+
+
+
+/* Cards */
+
+
+.card{
+
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+
+    text-align:center;
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:0.4s;
+
+    border-top:5px solid #2563eb;
+
+}
+
+
+
+.card h3{
+
+    color:#2563eb;
+    margin-bottom:15px;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-10px) scale(1.03);
+
+    box-shadow:
+    0 15px 30px rgba(37,99,235,0.25);
+
+}
+
+
+
+/* Content Boxes */
+
+
+.settings-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,0.1);
+
+    margin-top:15px;
+
+    transition:0.3s;
+
+}
+
+
+
+.settings-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+/* Lists */
+
+
+.settings-card ul{
+
+    line-height:2;
+
+    font-size:17px;
+
+}
+
+
+
+.settings-card li::marker{
+
+    color:#2563eb;
+
+}
+
+
+
+/* Formula Section */
+
+
+.settings-card p{
+
+    font-size:17px;
+
+    line-height:1.7;
+
+}
+
+
+
+/* Buttons */
+
+
+button{
+
+    background:linear-gradient(
+    135deg,
+    #2563eb,
+    #7c3aed
+    );
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+
+button:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:
+    0 8px 20px rgba(37,99,235,0.35);
+
+}
+
+
+
+/* Progress Bar */
+
+
+.progress-bar{
+
+    width:100%;
+
+    height:30px;
+
+    background:#e5e7eb;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+
+
+#progress{
+
+    height:100%;
+
+    background:
+    linear-gradient(
+    90deg,
+    #2563eb,
+    #22c55e
+    );
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:bold;
+
+    border-radius:20px;
+
+    animation:progressAnimation 2s;
+
+}
+
+
+
+@keyframes progressAnimation{
+
+    from{
+
+        width:0;
+
+    }
+
+    to{
+
+        width:55%;
+
+    }
+
+}
+
+
+
+/* Math Formula Styling */
+
+
+mjx-container{
+
+    font-size:120% !important;
+
+    color:#111827;
+
+}
+
+
+
+/* Navigation Buttons Area */
+
+
+.dashboard a button{
+
+    margin:10px;
+
+}
+
+
+
+/* Geometry Lab Highlight */
+
+
+.settings-card a button{
+
+    margin-top:15px;
+
+}
+
+
+
+/* Video Section */
+
+
+.settings-card button:first-child{
+
+    margin-top:10px;
+
+}
+
+
+
+/* Page Animation */
+
+
+.dashboard{
+
+    animation:fadeIn 0.8s ease;
+
+}
+
+
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* Responsive Design */
+
+
+@media(max-width:768px){
+
+
+.dashboard{
+
+    padding:20px;
+
+}
+
+
+.dashboard h1{
+
+    font-size:32px;
+
+}
+
+
+.dashboard h2{
+
+    font-size:24px;
+
+}
+
+
+.dashboard-cards{
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
+
+
+/* Floating Geometry Theme */
+
+.card:nth-child(1){
+
+    border-color:#ef4444;
+
+}
+
+.card:nth-child(2){
+
+    border-color:#22c55e;
+
+}
+
+.card:nth-child(3){
+
+    border-color:#f59e0b;
+
+}
+
+.card:nth-child(4){
+
+    border-color:#8b5cf6;
+
+}
+
+.card:nth-child(5){
+
+    border-color:#ec4899;
+
+}
+
+.card:nth-child(6){
+
+    border-color:#06b6d4;
+
+}
